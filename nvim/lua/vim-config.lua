@@ -1,0 +1,25 @@
+vim.g.mapleader = " "
+
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.cmd("set linespace=5")
+vim.cmd("set splitright")
+vim.cmd("set splitbelow")
+vim.cmd("set number relativenumber")
+vim.cmd("set nu rnu")
+
+vim.keymap.set("n", "<C-j>", "<C-w>W", {})
+vim.keymap.set("n", "<C-k>", "<C-w>w", {})
+vim.keymap.set({ "n", "v"}, "<C-h>", "^", {})
+vim.keymap.set({ "n", "v"}, "<C-l>", "g_", {})
+vim.keymap.set('n', "t", "gt", {})
+vim.keymap.set('n', "<C-t>", ":tabnew<CR>", {})
+vim.keymap.set('n', "<Enter>", "o", {})
+vim.keymap.set('i', '<M-h>', '<Left>', {})
+vim.keymap.set('i', '<M-j>', '<Down>', {})
+vim.keymap.set('i', '<M-k>', '<Up>', {})
+vim.keymap.set('i', '<M-l>', '<Right>', {})
+vim.keymap.set('i', '<C-d>', '<*-cgn>', {})
+
